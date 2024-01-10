@@ -1896,7 +1896,7 @@ $marginWidth: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
         bottom: 0;
         left: 0;
         right: 0;
-      }
+    }
     .container{
         .tab{
             li{
@@ -1959,6 +1959,7 @@ $marginWidth: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
         .goal-note{
             color: $baseWhite;
             font-size: 1rem;
+            text-align-last: left;
         }
     }
 }

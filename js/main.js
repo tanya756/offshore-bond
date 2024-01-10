@@ -307,7 +307,7 @@ const app = Vue.createApp({
         getQueryStringToNext() {
             window.onload = function() {
                 var query = window.location.search.slice(1);
-                var links = document.querySelectorAll("a");
+                var links = document.querySelectorAll("a:not(.dont_add_link)");
             
                 for (var i = 0; i < links.length; i++) {
                     var hrefValue = links[i].getAttribute("href");
@@ -585,12 +585,12 @@ app.component('shareLink', {
                             </a>
                         </li>
                         <li>
-                            <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl" title="分享到Facebook" target="_blank">
+                            <a class="dont_add_link" :href="'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl" title="分享到Facebook" target="_blank">
                                 <i class="fab fa-facebook-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a :href="'http://line.naver.jp/R/msg/text/?' + pageTitle + ' ' + pageUrl" title="分享到LINE" target="_blank">
+                            <a class="dont_add_link"  :href="'http://line.naver.jp/R/msg/text/?' + pageTitle + ' ' + pageUrl" title="分享到LINE" target="_blank">
                                 <i class="fab fa-line"></i>
                             </a>
                         </li>
