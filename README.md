@@ -1,1 +1,1 @@
-# kgiWedTemplate 凱證活動頁template
+# offshore-bond 海外債活動頁
